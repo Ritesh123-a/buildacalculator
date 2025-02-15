@@ -3,33 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>calculator</title>
+    <title>Basic Calcuator</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    <h1>calculator</h1>
-    <form action=""name="clc">
-        <input type="text" name="display" style="width:370px; height:70px; background-color:gray;"><br>
-        <input type="button" value="0" onclick="clc.display.value +='0'">
-        <input  type="button" value="1" onclick="clc.display.value +='1'">
-        <input  type="button" value="2" onclick="clc.display.value +='2'">
-        <input  type="button" value="+" onclick="clc.display.value +='+'" style="background-color:red"><br>
-        <input  type="button" value="3" onclick="clc.display.value +='3'">
-        <input  type="button" value="4" onclick="clc.display.value +='4'">
-        <input  type="button" value="5" onclick="clc.display.value += '5'">
-        <input  type="button" value="-"  onclick="clc.display.value +='-'"><br>
-        <input  type="button" value="6"  onclick="clc.display.value +='6'">
-        <input  type="button" value="7"  onclick="clc.display.value +='7'">
-        <input  type="button" value="8"  onclick="clc.display.value +='8'">
-        <input  type="button" value="*"  onclick="clc.display.value +='*'"><br>
-        <input  type="button" value="9"  onclick="clc.display.value +='9'">
-        <input  type="button" value="c" onclick="clc.display.value =''">
-        <input  type="button" value="=" onclick="clc.display.value =eval(clc.display.value)">
-        <input type="button" value="&#247;" onclick="clc.display.value +='/'">
-
-    </form>
-    
+    <h1>Calculator</h1>
+    <div class="container">
+        <div class="ans">
+            <input type="text" name="display" id="answer">
+        </div>
+        <div class="numbers">
+            <div class="first_row">
+                <input id="AC" type="button" value="AC" class="operator">
+                <input id="DEL" type="button" value="DEL" class="operator">
+                <input id="dot" type="button" value="." class="operator">
+                <input id="divide" type="button" value="/" class="operator">
+            </div>
+            <div class="sec_row">
+                <input id="seven" type="button" value="7">
+                <input id="eight" type="button" value="8">
+                <input id="nine" type="button" value="9">
+                <input id="plus" type="button" value="+" class="operator">
+            </div>
+            <div class="third_row">
+                <input id="four" type="button" value="4">
+                <input id="five" type="button" value="5">
+                <input id="six" type="button" value="6">
+                <input id="minus" type="button" value="-" class="operator">
+            </div>
+            <div class="forth_row">
+                <input id="one" type="button" value="1">
+                <input id="two" type="button" value="2">
+                <input id="three" type="button" value="3">
+                <input id="multiply" type="button" value="*" class="operator">
+            </div>
+            <div class="fifth_row">
+                <input id="double_zero" type="button" value="00">
+                <input id="zero" type="button" value="0">
+                <input id="equal" type="button" value="=" style="width: 165px;" class="operator">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
